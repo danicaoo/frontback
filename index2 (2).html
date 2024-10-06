@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <header>
+        <div>
+            <img  width = "150" src="pictures/logo.png" alt="">
+            
+        </div>
+        <div>
+            <p>ЭФБО-09-23</p>
+            <p>Кузнецов Даниил Дмитриевич</p>
+        </div>
+       
+    </header>
+    <div class="line">
+        <hr size="4">   
+    </div>        
+    <nav class="nav">
+        <a href="#" class="nav-link">Главная</a>
+        <a href="#" class="nav-link">Первый семестр</a>
+        <a href="#" class="nav-link">Второй семестр</a>
+        <a href="#" class="nav-link">Услуги</a>
+        <a href="#" class="nav-link">Авторизация</a>
+    </nav>
+    <div class="line">
+        <hr size="4">   
+    </div>   
+    
+    
+    <main class="main">
+        <aside>
+            <div class="main-nav">
+                <h6 class="main-nav-text">Навигация по странице</h6>
+                <a class="main-nav-link" href="#">Фронтэнд</a>
+                <a class="main-nav-link" href="#">Бэкенд</a>
+            </div>
+        </aside>
+        <div class="line">
+            <hr size="4">   
+        </div>  
+        
+        <section>
+            <h2>Разработка веб-приложений</h2>
+            <div class="form">
+                <div class="section-block">
+                    <a class="section-img" href=""><img src="https://www.usmagazine.com/wp-content/uploads/2024/03/5-Things-to-Know-About-Aaron-Taylor-Johnson-1.jpg?quality=40&strip=all" width="300px" alt=""></a>
+                    <div>
+                        <p class="section-text">Сайт-визитка</p>
+                        <button  class="open-modal">заказать</button>
+                    </div>
+                    
+                </div>
+                <div class="section-block">
+                    <a class="section-img" href=""><img src="https://www.usmagazine.com/wp-content/uploads/2024/03/5-Things-to-Know-About-Aaron-Taylor-Johnson-1.jpg?quality=40&strip=all" width="300px" alt=""></a>
+                    <div>
+                        <p class="section-text">Сайт-визитка</p>
+                        <button  class="open-modal">заказать</button>
+                    </div>
+                    
+                </div>
+                <div class="section-block">
+                    <a class="section-img" href=""><img src="https://www.usmagazine.com/wp-content/uploads/2024/03/5-Things-to-Know-About-Aaron-Taylor-Johnson-1.jpg?quality=40&strip=all" width="300px" alt=""></a>
+                    <div>
+                        <p class="section-text">Сайт-визитка</p>
+                        <button  class="open-modal">заказать</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="text12">
+                <p class="text1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quaerat aut sunt iste laborum vel, labore nulla magnam sed! Quae enim corrupti repudiandae ex reprehenderit natus quaerat, impedit aut optio necessitatibus, unde sunt voluptatem rem? Error similique iure animi possimus architecto iste facilis repudiandae ducimus nisi maiores! Corporis vitae esse, repellendus soluta numquam quidem labore facere dolor molestiae velit nulla odit expedita dicta iusto rerum. Soluta natus ratione quidem vel! Cupiditate cumque praesentium temporibus sed magnam. Nostrum, pariatur necessitatibus. Praesentium nulla dolorem reiciendis tempore.</p>
+                <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, quidem beatae! Labore et soluta ratione deleniti ut necessitatibus facere, repellat ullam in accusamus minima, aliquam mollitia sunt perferendis facilis dolor qui architecto dolorem provident adipisci eum dignissimos neque? Atque aliquid minus libero fugit deserunt?</p>
+            </div>
+            <div class="modal" id="modal">
+                <div class="modal-content" >
+                    <div>
+                        <span class="close">x</span>
+                    </div>
+                    <h3 id='modal-title'>Разработка веб-приложения</h3>
+                    <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+                    <form id="myForm">
+                        <div>
+                            <p>Как вас зовут</p>
+                            <label  for="name"><input class="input" type="text" id="name" required></label>
+                        </div>
+                        <div>
+                            <p>Ваш e-mail</p>
+                            <label for="email"><input class="input" type="email" id="email" required></label>
+                        </div>
+                        <div>
+                            <p>Телефон</p>
+                            <label for="phone"><input class="input" type="tel" id="phone-input" placeholder="Введите номер телефона" required></label>
+                        </div>
+                        <div>
+                            <p>Страна</p>
+                            <label for="coutries">
+                            <select class="input" name="countries" id="countries" required>
+                                <option value="страна1">США</option>
+                                <option value="страна2" selected>Россия</option>
+                                <option value="страна3">Китай</option>
+                            </select>
+                            </label>
+                        </div>
+                        <div>
+                            <p>Дата</p>
+                            <label for="date"><input class="input" type="date" id="date" required></label>
+                        </div>
+                        <div>
+                            <p>Комментарий</p>
+                            <label for="comments"><textarea class="input" name="comments" id="comments" required></textarea></label>
+                        </div>
+                        <p><input class="input" type="checkbox">Согласие на обработку данных</p>
+                        <button type="submit" class="close">Отправить заявку</button>
+                    </form>
+            </div>
+        </section>
+        <script src='index2.js'></script>
+    </main>
+    <div class="line"></div>
+        <hr size="4">   
+    </div>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Кузнецов Даниил Дмитриевич, 2024</p>
+        </div>
+        <div class="footer-img">
+            <a href="https://vk.com/"><img width="100px"  src="pictures/vk.png" alt=""></a>
+            <a href="https://www.whatsapp.com/"><img img width="92px" src="pictures/whatsapp.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

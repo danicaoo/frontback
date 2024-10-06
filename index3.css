@@ -1,0 +1,124 @@
+body{
+    background-color: rgba(179, 180, 178, 0.432);
+    font-family: "Josefin Sans", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.line{
+    margin: 0;
+    color: #000000c5;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.nav{
+    display: flex;
+    align-items:center;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0; 
+    gap: 50px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 24px;
+    color: #446381;
+    transition: .2s ease color;
+}
+
+.nav-link:hover{
+    color: #b56576;
+}
+
+.main{
+    display: flex;
+    gap: 40px;
+    margin: 0;
+}
+
+.main-nav{
+    padding-right: 80px;
+    
+}
+
+.main-nav-text{
+    font-size: 14px;
+}
+
+.main-nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #446381;
+    transition: .2s ease color;
+    display: flex;
+    padding-top:10px;
+}
+
+.main-nav-link:hover{
+    color: #b56576;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th, td{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #2881db;
+  }
+  
+  /* Чередование фона в строках с <td> */
+  table tr:not(:first-child):nth-child(even) td {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:not(:first-child):nth-child(odd) td {
+    background-color: #b3d9ff;
+  }
+
+.leck{
+    padding-top: 5px;
+}
+
+.prak{
+    padding-top: 50px;    
+}
+
+.adres{
+    padding-top: 50px;
+}
+
+.pdf{
+    
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer{
+    margin: 0;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+   
+}
+
+.footer-text{
+    text-align: center;
+    padding-left: 800px;
+    padding-top: 20px;
+}
