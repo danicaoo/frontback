@@ -11,6 +11,11 @@ header{
     font-size: 20px;
 }
 
+.header-text{
+    font-size: 20px;
+    color: #b56576;
+}
+
 .line{
     margin: 0;
     color: #000000c5;
@@ -43,6 +48,15 @@ header{
     
     gap: 40px;
     margin: 0;
+}
+
+.main-text{
+    font-size: 18px;
+    color: #29171b;
+}
+
+.main-info{
+    color:#1a4f85;
 }
 
 .name{
@@ -87,4 +101,8 @@ header{
     text-align: center;
     padding-left: 800px;
     padding-top: 20px;
+}
+
+.footer-txt{
+    color:#1a4f85;
 }
