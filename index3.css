@@ -3,13 +3,19 @@ body{
     font-family: "Josefin Sans", sans-serif;
 }
 
-header{
+.header{
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 20px;
 }
+
+.header-text{
+    font-size: 20px;
+    color: #b56576;
+}
+
 
 .line{
     margin: 0;
@@ -42,6 +48,10 @@ header{
     display: flex;
     gap: 40px;
     margin: 0;
+}
+
+.main-info{
+    color: #163e66;
 }
 
 .main-nav{
@@ -82,12 +92,11 @@ table th {
     background-color: #2881db;
   }
   
-  /* Чередование фона в строках с <td> */
-  table tr:not(:first-child):nth-child(even) td {
+table tr:not(:first-child):nth-child(even) td {
     background-color: #f2f2f2;
   }
   
-  table tr:not(:first-child):nth-child(odd) td {
+table tr:not(:first-child):nth-child(odd) td {
     background-color: #b3d9ff;
   }
 
@@ -121,4 +130,8 @@ table th {
     text-align: center;
     padding-left: 800px;
     padding-top: 20px;
+}
+
+.footer-txt{
+    color: #525a21;
 }
