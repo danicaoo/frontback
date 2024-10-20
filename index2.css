@@ -11,6 +11,12 @@ header{
     font-size: 20px;
 }
 
+.header-text{
+    font-size: 20px;
+    color: #b56576;
+}
+
+
 .line{
     margin: 0;
     color: #000000c5;
@@ -60,8 +66,16 @@ header{
     transition: .2s ease color;
 }
 
+.text12{
+    color: #3d0b0b;
+}
+
 .main-nav-link:hover{
     color: #b56576;
+}
+
+.section-zag{
+    color: #16426e;
 }
 
 .form{
@@ -174,4 +188,8 @@ header{
     text-align: center;
     padding-left: 800px;
     padding-top: 20px;
+}
+
+.footer-text{
+    color: #fd0707;
 }
