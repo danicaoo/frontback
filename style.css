@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth; 
+}
 
 body{
     background-color: rgba(179, 180, 178, 0.432);
@@ -12,6 +15,11 @@ header{
     font-size: 20px;
 }
 
+.img-mashtab {
+    max-width: 100%; 
+    height: auto; 
+}
+
 .header-text{
     font-size: 20px;
     color: #b56576;
@@ -24,13 +32,35 @@ header{
     
 }
 
+.line_new{
+    width: 100%;   
+}
+
+.line_new hr {
+    border: none;          
+    border-top: 4px solid #000; 
+    width: 100%;           
+}
+
+.nav-links {
+    display: flex;         
+    justify-content: space-between;
+    margin: 10px 0;      
+    flex-wrap: wrap;
+}
+
 .nav{
-    display: flex;
+    background-color: rgba(255, 255, 255, 0.432);
+    position: sticky;
+    top: 0;                
+    left: 0;               
+    right: 0; 
+    z-index: 1000;
+    display: flexbox;
     align-items:center;
     list-style-type: none;
     justify-content: space-between;
-    padding-left: 0;
-    margin: 0; 
+    max-width: 100%;
 }
 
 .nav-link{
@@ -38,6 +68,7 @@ header{
     font-size: 24px;
     color: #446381;
     transition: .2s ease color;
+    
 }
 
 .nav-link:hover{
@@ -46,7 +77,6 @@ header{
 
 .main{
     display: flex;
-    
     gap: 40px;
     margin: 0;
 }
@@ -54,29 +84,36 @@ header{
 .main-text{
     font-size: 18px;
     color: #29171b;
+    flex: 1;
 }
 
 .main-info{
     color:#1a4f85;
+    max-width: 1200px;
 }
 
 .name{
     display: flex;
     align-items:center;
-    gap: 200px;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.section {
+    margin: 20px 0; 
 }
 
 .video{
-    padding-left: 30pc;
+    padding-left: 30px;
 }
 
 .main-nav{
     padding-right: 100px;
-    
 }
 
 .main-nav-text{
     font-size: 14px;
+    display: flex;
 }
 
 .main-nav-link{
@@ -94,39 +131,166 @@ header{
 .grid-container{
     padding-top: 50px;
     display: grid;
-    grid-template-columns:repeat(3,400px);
-    grid-template-rows: 1fr 1fr ;
-    gap:50px 10px;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    gap: 50px 10px;
 }
 
 .block1{
-    grid-column: 1/3;
+    grid-column: 1/4;
     grid-row: 1/3;
 }
-
 .block4{
     grid-column: 1/3;
-     
 }
-
 .block12{
     grid-column: 1/4;
 }
 
+.fix-button {  
+    border: 1px solid grey;
+    width: 150px;
+    min-width: 150px;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: hsl(9,92%,63%);
+    padding: 15px 0;
+    color: #fff;
+    z-index: 100;
+    left: 90%;
+    top: 90%;
+    animation: button 3s infinite;
+    position:fixed;
+    transform: translate(-50%, -50%);
+  }
+
+.fix-button-btn{
+    text-decoration: none;
+    color: #fff;
+}
+
+@keyframes button {
+    50% {background-color: hsl(0, 0%, 0%); color: #000 }
+}
 .footer{
     margin: 0;
     display: flex;
     align-self: center;
     justify-content: space-between;
-   
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .footer-text{
+    display: flex;
     text-align: center;
-    padding-left: 800px;
-    padding-top: 20px;
+    align-items:center;
+    justify-content: center;
+    flex: 1;
 }
 
 .footer-txt{
     color:#1a4f85;
+}
+
+
+@media (max-width: 768px) {
+    h2.main-info {
+        font-size: 1.8em; 
+    }
+    
+    h3.main-info {
+        font-size: 1.5em; 
+    }
+
+    .main-text{
+        width: 80%;
+    }
+
+    .name {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    
+    .img-mashtab {
+        margin-left: 0; 
+        margin-top: 10px; 
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    }
+
+    .block1, .block4, .block12 {
+        grid-column: 1 / -1; 
+    }
+
+    .footer-img {
+        margin-top: 10px; 
+    }
+
+    .fix-button {
+        width: 20vw;
+        min-width: 120px; 
+    }
+
+    .video{
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header{
+        gap: 30px;
+    }
+
+    .header-text{
+        font-size: 16px;
+    }
+
+    h2.main-info {
+        font-size: 1.6em; 
+    }
+    
+    .grid-container {
+        padding-top: 30px; 
+    }
+
+    .main-nav{
+        padding-right: 14px;
+    }
+
+    .main{
+        gap: 15px;
+    }
+
+    h3.main-info {
+        font-size: 1.4em; 
+    }
+
+    .main-text{
+        width: 80%;
+    }
+
+    .nav{
+        height: 50%;
+        
+    }
+
+    .nav-link{
+        font-size: 14px;
+    }
+
+    .fix-button {
+        width: 20vw;
+        min-width: 100px;
+        font-size: 14px; 
+        padding: 10px 0; 
+    }
 }
