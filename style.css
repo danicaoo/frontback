@@ -32,6 +32,12 @@ header{
     
 }
 
+.line-nav{
+    margin: 0;
+    color: #000000c5;
+    background-color: rgb(0, 0, 0);
+}
+
 .line_new{
     width: 100%;   
 }
@@ -243,6 +249,14 @@ header{
     .video{
         width: 80%;
     }
+
+    .line-nav{
+        display: none;
+    }
+
+    .main-nav{
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -292,5 +306,17 @@ header{
         min-width: 100px;
         font-size: 14px; 
         padding: 10px 0; 
+    }
+
+    .line-nav{
+        display: none;
+    }
+
+    .main-nav{
+        display: none;
+    }
+
+    .main-info{
+        font-size: 8px  ;
     }
 }
