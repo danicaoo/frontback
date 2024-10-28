@@ -33,6 +33,12 @@ body{
     
 }
 
+.line-nav{
+    margin: 0;
+    color: #000000c5;
+    background-color: rgb(0, 0, 0);
+}
+
 .line_new hr {
     border: none;          
     border-top: 4px solid #000; 
@@ -236,6 +242,14 @@ table tr:not(:first-child):nth-child(odd) td {
         width: 20vw;
         min-width: 120px; 
     }
+
+    .line-nav{
+        display: none;
+    }
+
+    .main-nav{
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -285,5 +299,29 @@ table tr:not(:first-child):nth-child(odd) td {
 
     table {
         font-size: 5px; 
+    }
+
+    .main{
+        gap: 10px;
+    }
+
+    .footer-txt{
+        font-size: 12px;
+    }
+
+    .footer-img{
+        width: 200px;
+    }
+
+    .nav-links{
+        margin: 0;
+    }
+
+    .line-nav{
+        display: none;
+    }
+
+    .main-nav{
+        display: none;
     }
 }
