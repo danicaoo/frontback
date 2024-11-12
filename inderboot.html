@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт 1</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(179, 180, 178, 0.432);
+            font-family: "Josefin Sans", sans-serif;
+        }
+        .header-text {
+            color: #b56576;
+        }
+        .main-info {
+            color: #1a4f85;
+        }
+        .footer-txt {
+            color: #1a4f85;
+        }
+        .navigation {
+        margin-bottom: 0; 
+        }
+    
+        .main-info {
+        margin-top: 0; 
+        }
+
+        .main-nav {
+            background-color: #fcfcfc; 
+            border: 1px solid #aed4da; 
+            border-radius: 5px;
+            padding: 10px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 0; 
+        }
+
+        .main-nav h6 {
+            font-weight: bold; 
+        }
+
+        .main-nav a {
+            color: #007bff; 
+            text-decoration: none; 
+        }
+
+        .main-nav a:hover {
+            text-decoration: underline; 
+        }
+
+        .fix-button {  
+        border: 1px solid grey;
+        width: 150px;
+        min-width: 150px;
+        max-width: 250px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: hsl(9, 20%, 66%);
+        padding: 10px 0;
+        color: #fff;
+        z-index: 100;
+        left: 90%;
+        top: 90%;
+        animation: button 3s infinite;
+        position:fixed;
+        transform: translate(-50%, -50%);
+        }   
+
+        .fix-button-btn{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @keyframes button {
+            50% {background-color: hsl(0, 2%, 65%); color: #000 }
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex justify-content-between p-3">
+        <div>
+            <img class="img-fluid" width="150" src="pictures/logo.png" alt="">
+        </div>
+        <div class="text-right">
+            <p class="header-text mb-1">ЭФБО-09-23</p>
+            <p class="header-text">Кузнецов Даниил Дмитриевич</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-around w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Первый семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Второй семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Авторизация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container-fluid mt-4">
+        <div class="row">
+            <aside class="col-md-4 d-none d-md-block pl-3">
+                <div class="main-nav">
+                    <h6>Навигация по странице</h6>
+                    <a class="d-block" href="#front">Фронтэнд</a>
+                    <a class="d-block" href="#back">Бэкенд</a>
+                </div>
+            </aside>
+            <div class="col-md-8">
+                <h2 class="main-info">Добро пожаловать на мой сайт</h2>
+                <div class="d-flex align-items-center my-2">
+                    <p class="main-text">Меня зовут Кузнецов Даниил Дмитриевич и я начинающий специалист по веб-разработке.</p>
+                    <img class="img-fluid ml-3" width="300" src="pictures/me.JPG" alt="">
+                </div>
+                <div>
+                    <h3 class="main-info" id="front">Фронтэнд</h3>
+                    <p class="main-text">Фронтенд (или клиентская часть) - это то, что видит пользователь. Он включает в себя все визуальные элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики используют языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и привлекательные интерфейсы. Основная задача фронтенда - обеспечить удобство использования и эстетическую привлекательность.</p>
+                    <video class="video w-100 mb-3" controls>
+                        <source src="https://rutube.ru/video/a8e69912d47e180933b19ed5421223d6/?r=plwd" type="video/mp4">
+                        Ваш браузер не поддерживает тег video.
+                    </video>
+                </div>
+                <div>
+                    <h3 class="main-info" id="back">Бэкенд</h3>
+                    <p class="main-text">Бэкенд разработчики используют языки программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для создания логики приложения. Основная задача бэкенда - обеспечить стабильную работу приложения и безопасность данных.</p>
+                    <video class="video w-100 mb-3" controls>
+                        <source src="https://rutube.ru/video/a8e69912d47e180933b19ed5421223d6/?r=plwd" type="video/mp4">
+                        Ваш браузер не поддерживает тег video.
+                    </video>
+                </div>
+    
+                <div class="row">
+                    <div class="col-12"><img class="img-fluid" src="pictures/6cbc63ffff613b0e20139df493259813.jpeg" alt=""></div>
+                    <div class="col-6"><img class="img-fluid" src="pictures/6cbc63ffff613b0e20139df493259813.jpeg" alt=""></div>
+                    <div class="col-6"><img class="img-fluid" src="pictures/6cbc63ffff613b0e20139df493259813.jpeg" alt=""></div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-6">какой-то текст...</div>
+                    <div class="col-6">какой-то текст...</div>
+                    <div class="col-6">какой-то текст...</div>
+                    <div class="col-6">какой-то текст...</div>
+                    <div class="col-6">какой-то текст...</div>
+                    <div class="col-6">какой-то текст...</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <div class="fixed-bottom d-flex justify-content-end mb-3">
+        <a class="btn btn-warning" href="#">В начало</a>
+    </div>
+    
+
+    <footer class="footer mt-4 p-3 d-flex flex-column align-items-center">
+        <div class="footer-text text-center mb-2">
+            <p class="footer-txt">Кузнецов Даниил Дмитриевич, 2024</p>
+        </div>
+        <div class="footer-img d-flex justify-content-center flex-wrap">
+            <a href="https://vk.com/" class="mx-2">
+                <img class="img-fluid" width="100" src="pictures/vk.png" alt="">
+            </a>
+            <a href="https://www.whatsapp.com/" class="mx-2">
+                <img class="img-fluid" width="92" src="pictures/whatsapp.png" alt="">
+            </a>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

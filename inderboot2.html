@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            background-color: rgba(179, 180, 178, 0.432);
+            font-family: "Josefin Sans", sans-serif;
+        }
+        .header-text {
+            color: #b56576;
+        }
+        .main-info {
+            color: #1a4f85;
+        }
+        .footer-txt {
+            color: #1a4f85;
+        }
+        .navigation {
+        margin-bottom: 0; 
+        }
+    
+        .main-info {
+        margin-top: 0; 
+        }
+
+        .main-nav {
+            background-color: #fcfcfc; 
+            border: 1px solid #aed4da; 
+            border-radius: 5px;
+            padding: 10px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 0; 
+        }
+
+        .main-nav h6 {
+            font-weight: bold; 
+        }
+
+        .main-nav a {
+            color: #007bff; 
+            text-decoration: none; 
+        }
+
+        .main-nav a:hover {
+            text-decoration: underline; 
+        }
+
+        .fix-button {  
+        border: 1px solid grey;
+        width: 150px;
+        min-width: 150px;
+        max-width: 250px;
+        text-align: center;
+        border-radius: 15px;
+        background-color: hsl(9, 20%, 66%);
+        padding: 10px 0;
+        color: #fff;
+        z-index: 100;
+        left: 90%;
+        top: 90%;
+        animation: button 3s infinite;
+        position:fixed;
+        transform: translate(-50%, -50%);
+        }   
+
+        .fix-button-btn{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @keyframes button {
+            50% {background-color: hsl(0, 2%, 65%); color: #000 }
+        }
+
+        .modal-content {
+            border-radius: 10px; 
+        }
+        .modal-header {
+            background-color: #007bff; 
+            color: #ffffff; 
+        }
+        .modal-body {
+            background-color: #f8f9fa; 
+        }
+        .form-control {
+            border-radius: 5px; 
+            border: 1px solid #007bff; 
+        }
+        .btn-primary {
+            background-color: #007bff; 
+            border: none; 
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .form-check-input:checked {
+            background-color: #007bff;
+            border-color: #007bff; 
+        }        
+    </style>
+</head>
+<body class="bg-light">
+
+    <header class="d-flex justify-content-between p-3">
+        <div>
+            <img width="150" src="pictures/logo.png" alt="">
+        </div>
+        <div class="text-center">
+            <p class="font-weight-bold text-primary">ЭФБО-09-23</p> 
+            <p class="font-weight-bold text-primary">Кузнецов Даниил Дмитриевич</p> 
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-around w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Первый семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Второй семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Авторизация</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container my-4">
+        <div class="row no-gutters">
+            <aside class="col-md-3 d-none d-md-block">
+                <h6 class="">Навигация по странице</h6>
+                <a class="d-block" href="#">Фронтэнд</a>
+                <a class="d-block" href="#">Бэкенд</a>
+            </aside>
+            <div class="col-md-9">
+                <h2 class="text-primary text-center">Разработка веб-приложений</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 mb-4"> 
+                        <div class="card">
+                            <img src="https://www.usmagazine.com/wp-content/uploads/2024/03/5-Things-to-Know-About-Aaron-Taylor-Johnson-1.jpg?quality=40&strip=all" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text">Сайт-визитка</p>
+                                <button class="btn btn-outline-secondary open-modal">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4"> 
+                        <div class="card">
+                            <img src="https://www.usmagazine.com/wp-content/uploads/2024/03/5-Things-to-Know-About-Aaron-Taylor-Johnson-1.jpg?quality=40&strip=all" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text">Сайт-визитка</p>
+                                <button class="btn btn-outline-secondary open-modal">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 mb-4">
+                        <div class="card">
+                            <img src="https://www.usmagazine.com/wp-content/uploads/2024/03/5-Things-to-Know-About-Aaron-Taylor-Johnson-1.jpg?quality=40&strip=all" class="card-img-top" alt="...">
+                            <div class="card-body text-center">
+                                <p class="card-text">Сайт-визитка</p>
+                                <button class="btn btn-outline-secondary open-modal">заказать</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <div class="text12">
+            <p class="text1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quaerat aut sunt iste laborum vel, labore nulla magnam sed! Quae enim corrupti repudiandae ex reprehenderit natus quaerat, impedit aut optio necessitatibus, unde sunt voluptatem rem? Error similique iure animi possimus architecto iste facilis repudiandae ducimus nisi maiores! Corporis vitae esse, repellendus soluta numquam quidem labore facere dolor molestiae velit nulla odit expedita dicta iusto rerum. Soluta natus ratione quidem vel! Cupiditate cumque praesentium temporibus sed magnam. Nostrum, pariatur necessitatibus. Praesentium nulla dolorem reiciendis tempore.</p>
+            <p class="text2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur quaerat aut sunt iste laborum vel, labore nulla magnam sed! Quae enim corrupti repudiandae ex reprehenderit natus quaerat, impedit aut optio necessitatibus, unde sunt voluptatem rem? Error similique iure animi possimus architecto iste facilis repudiandae ducimus nisi maiores! Corporis vitae esse, repellendus soluta numquam quidem labore facere dolor molestiae velit nulla odit expedita dicta iusto rerum. Soluta natus ratione quidem vel! Cupiditate cumque praesentium temporibus sed magnam. Nostrum, pariatur necessitatibus. Praesentium nulla dolorem reiciendis tempore.</p>
+        </div>
+    
+        <div class="modal" id="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Разработка веб-приложения</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="max-height: 80vh; overflow-y: auto;">
+                        <p>Заполните форму и мы обязательно свяжемся с вами в ближайшее время для уточнения деталей</p>
+                        <form id="myForm">
+                            <div class="form-group">
+                                <label for="name">Как вас зовут</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ваш e-mail</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" class="form-control" id="phone-input" placeholder="Введите номер телефона" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="countries">Страна</label>
+                                <select class="form-control" id="countries" required>
+                                    <option value="страна1">США</option>
+                                    <option value="страна2" selected>Россия</option>
+                                    <option value="страна3">Китай</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Дата</label>
+                                <input type="date" class="form-control" id="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comments">Комментарий</label>
+                                <textarea class="form-control" id="comments" required></textarea>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" required>
+                                <label class="form-check-label">Согласие на обработку данных</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="fixed-bottom d-flex justify-content-end mb-3">
+        <a class="btn btn-warning" href="#">В начало</a>
+    </div>
+
+    <footer class="footer bg-light text-center">
+        <div class="container">
+            <p class="footer-txt">Кузнецов Даниил Дмитриевич, 2024</p>
+            <div>
+                <a href="https://vk.com/"><img src="pictures/vk.png" width="50" alt=""></a>
+                <a href="https://www.whatsapp.com/"><img src="pictures/whatsapp.png" width="50" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="index2.js"></script>
+</body>
+</html>
