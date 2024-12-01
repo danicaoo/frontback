@@ -87,7 +87,6 @@ function submitForm() {
     modal.style.display = "none";
 }
 
-// Обработчик для формы
 const form = document.getElementById('myForm');
 
 form.addEventListener('submit', (event) => {
