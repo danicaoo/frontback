@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтрация лекций</title>
+    
+</head>
+<body>
+    <h1>Фильтрация лекций</h1>
+    <div id="output"></div>
+    <script>
+        const output = document.getElementById('output');
+
+        function filterLecturesStartingWithO(lecturesArray) {
+            return lecturesArray.filter(lecture => lecture.startsWith('О'));
+        }
+
+        const userInput = prompt("Введите темы лекций через запятую:");
+        const lectures = userInput.split(',').map(lecture => lecture.trim()); 
+
+        const filteredLectures = filterLecturesStartingWithO(lectures);
+
+        if (filteredLectures.length > 0) {
+            output.innerHTML = `<h2>Темы лекций, начинающиеся с буквы 'О':</h2><p>${filteredLectures.join(", ")}</p>`;
+        } else {
+            output.innerHTML = "<h2>Нет лекций, начинающихся с буквы 'О'</h2>";
+        }
+
+        console.log("Темы лекций, начинающиеся с буквы 'О':", filteredLectures);
+    </script>
+</body>
+</html>

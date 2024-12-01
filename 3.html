@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        const lectures = ['Тема 1', 'Тема 2', 'Тема 3'];
+        const practices = ['Практика 1', 'Практика 2', 'Практика 3'];
+
+        lectures.push('Тема 4'); 
+        practices.unshift('Практика 1   ');
+
+        const output = document.getElementById('output');
+        
+        output.innerHTML += "<h2>Темы лекций:</h2>";
+        lectures.forEach((lecture) => {
+            output.innerHTML += `<p>${lecture}</p>`; 
+        });
+
+        output.innerHTML += "<h2>Темы практик:</h2>";
+        practices.forEach((practice) => {
+            output.innerHTML += `<p>${practice}</p>`; 
+        });
+       
+        function printArrayElements(array) {
+            output.innerHTML += `<p>${array.join(", ")}</p>`; 
+        }
+       
+        printArrayElements(lectures);
+        printArrayElements(practices);
+    </script>
+</body>
+</html>
